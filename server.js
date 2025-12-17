@@ -3,7 +3,7 @@ const { sequelize } = require('./models');
 const authRoutes = require('./routes/authRoutes');
 const parkingRoutes = require('./routes/parkingRoutes');
 const vehicleRoutes = require('./routes/vehicleRoutes'); 
-const globalErrorHandler = require('./middleware/errorMiddleware'); // Best to use the external one
+const globalErrorHandler = require('./middleware/errorMiddleware'); 
 require('dotenv').config();
 
 const app = express();
