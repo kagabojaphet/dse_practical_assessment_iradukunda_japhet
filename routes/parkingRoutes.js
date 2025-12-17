@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const parkingCtrl = require('../controllers/parkingController');
 const { verifyToken, isManager } = require('../middleware/authMiddleware');
-const { validateEntry } = require('../middleware/validator'); // Import here
+const { validateEntry } = require('../middleware/validator'); 
 
 // Route with Validation
 router.post('/entry', verifyToken, isManager, validateEntry, parkingCtrl.enterParking);
